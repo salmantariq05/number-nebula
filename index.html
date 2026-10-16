@@ -1,0 +1,47 @@
+---
+title: I Built a 2-Player Brain Game at a Google Community Event (and Then Leveled It Up)
+published: false
+tags: ai, gamedev, javascript, beginners
+---
+
+Last night I attended VIBE CODIING WITH GOOGLE AI STUDIO, hosted by  GDGOC in PESHAWAR. The session was about Google AI Studio and how it can turn a rough idea into a working app in minutes.
+
+At the end, the speaker gave us a challenge: **build a game. The top 3 would get a surprise.** 🎁
+
+Here's what I built, what I learned, and how I took it further.
+
+## 🎮 Play it first
+
+{% codepen [https://codepen.io/editor/Salman-Tariq-the-sasster/pen/01a1465d-e154-79f0-9507-43c0fea83afb] %}
+
+**Controls:** Player 1 uses `A` `D` to move and `W` to fire. Player 2 uses the arrow keys. No friend nearby? Pick **Cosmic Bot**.
+
+## 💡 The idea: Number Nebula
+
+I wanted a game that is **fun for kids but still makes adults think**. So I mixed a classic space shooter with puzzles:
+
+- **Math Duel:** solve the sum, then shoot the alien carrying the answer.
+- **Word Builder:** read a clue, then shoot letters in the right order to spell the word.
+- **Brain Mix:** both, taking turns.
+
+Two players share one screen, and every 3 correct answers in a row fires an attack (Freeze, Fog, or Meteor Rush) at your rival.
+
+
+## 🔁 How I built it
+
+1. **Prompt:** I wrote a structured prompt (concept, controls, levels, scoring, visuals) and gave it to Google AI Studio. It built a working version on the first try.
+2. **Iterate:** I listed improvements and ranked them by impact. The biggest problem was that players never affected each other, so I added combo attacks.
+3. **Level up:** I added power-ups, a boss battle, age-based difficulty (so a 7-year-old and an adult can play a fair match), a bot opponent, and the Word Builder mode.
+
+**My biggest lesson:** make one change at a time, test it, then move on. Small steps beat one giant request.
+
+## ⚙️ Under the hood
+
+- Pure **HTML5 Canvas + JavaScript**, one single file, no frameworks
+- Sound effects generated in code with the **Web Audio API** (no audio files)
+- A simple **game loop**: update positions → check collisions → draw, about 60 times a second
+
+## 🚀 What's next
+
+[e.g. online multiplayer, more word packs, a leaderboard]
+
