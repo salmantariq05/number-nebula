@@ -4,7 +4,7 @@
 
 Built at **Vibe Coding with Google AI Studio** (GDG on Campus, Peshawar), then upgraded with combo attacks, power-ups, a boss battle and a Word Builder mode.
 
-### ▶️ [Play it now](https://YOUR-USERNAME.github.io/number-nebula/) · 📝 [Read the story on dev.to](YOUR-DEVTO-LINK)
+### ▶️ [Play it now](https://salmantariq05.github.io/number-nebula/) · 📝 [Read the story on dev.to](https://dev.to/salman_tariq_be5d705509b0/i-built-a-2-player-brain-game-at-a-google-community-event-and-then-leveled-it-up-2k42)
 
 ---
 
